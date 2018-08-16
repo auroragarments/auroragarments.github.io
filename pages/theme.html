@@ -1,0 +1,58 @@
+
+
+<div class="col-md-12" id="mypage" ng-controller="mainController">
+
+    <nav id="mykdr_nav">
+
+        <div class="col-md-12">
+
+            <div id="mykdr_logo">
+                <img class="mylogo" src={{dataSelected.mainData.general.logo}} alt={{dataSelected.mainData.general.url}}>
+            </div>
+
+            <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+            <label ng-click="" id="mymenucall"><i class="fa fa-phone"></i></label>
+            <label ng-click="closed()" id="closenav"><i class="fa fa-close"></i></label>
+
+            <ul id="mykdr_menu">
+                <li ng-click="menuload()" id="home"><a href="#home">HOME</a></li>
+                <li ng-click="menuload()" id="locality"><a href="#locality">OUR PRODUCTS</a></li>
+                <li ng-click="menuload()" id="culture"><a href="#culture">CONTACT US</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="col-md-12" id="theme-non-nav">
+
+        <div class="col-md-12">
+
+
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="banner" src={{dataSelected.mainData.theme.portrait.pic3}} alt={{dataSelected.mainData.theme.portrait.pic3alt}}>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="content" class="col-md-12">
+            <img class="banner" src={{dataSelected.mainData.theme.portrait.pic2}} alt={{dataSelected.mainData.theme.portrait.pic2alt}}>
+        </div>
+
+    </div>
+
+    <div class="col-md-12" id="footer" ng-controller="mainController">
+
+        <p id="copyright">{{dataSelected.mainData.footer.copyright}}</p>
+
+    </div>
+
+</div>
